@@ -2,9 +2,7 @@
 
 ### Const, let and var
 
-##### Prefer to use const, this adds less complexity to the code, and constants have a single purpose.
-
-##### Prefer to use const, this adds less complexity to the code, and constants have a single purpose.
+**Prefer to use const, this adds less complexity to the code, and constants have a single purpose.**
 
 ```html
 userName = Pedro
@@ -13,7 +11,7 @@ let userName = 25 // do not do it ❌
 const userName = Pedro
 const userName = 25  😎🎇
 
-
+```
 
 ### Arrow function
   
