@@ -41,3 +41,23 @@ Math.max(...numbers); => 3
 array(que é um objeto iterável), e desmembra cada item,
 ele espalha os valores, como se fossem passados um a um */
 ```
+
+**Antes do spread operator**
+
+```js
+ const superGMs = ['Magnus', 'MVL']
+ const GMS = ['Krikor', 'Leitão']
+ 
+ GMS.concat(superGMs) //["Krikor", "Leitão", "Magnus", "MVL"]
+```
+
+**Depois do spread operator**
+```js
+const superGMs = ['Magnus', 'MVL']
+const GMS = ['Krikor', 'Leitão'].concat(superGMs) // [ 'Krikor', 'Leitão', 'Magnus', 'MVL' ]
+```
+**Com spread operator**
+```js
+const superGMs = ['Magnus', 'MVL']
+const GMS = ['Krikor', ...superGMs, 'Leitão']
+```
