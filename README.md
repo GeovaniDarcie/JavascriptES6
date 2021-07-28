@@ -8,7 +8,7 @@
 let userName = Pedro
 let userName = 25 // do not do it ❌
 
-**const** userName = Pedro 😎🎇
+const userName = Pedro 😎🎇
 
 ```
 
