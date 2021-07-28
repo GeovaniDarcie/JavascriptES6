@@ -59,5 +59,5 @@ const GMS = ['Krikor', 'Leitão'].concat(superGMs) // [ 'Krikor', 'Leitão', 'Ma
 **Com spread operator**
 ```js
 const superGMs = ['Magnus', 'MVL']
-const GMS = ['Krikor', ...superGMs, 'Leitão']
+const GMS = ['Krikor', ...superGMs, 'Leitão'] // [ 'Krikor', 'Magnus', 'MVL', 'Leitão' ]
 ```
