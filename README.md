@@ -5,7 +5,7 @@
 **Prefer to use const, this adds less complexity to the code, and constants have a single purpose.**
 
 ```html
-userName = Pedro
+let userName = Pedro
 let userName = 25 // do not do it ❌
 
 const userName = Pedro
