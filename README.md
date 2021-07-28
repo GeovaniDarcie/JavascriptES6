@@ -4,15 +4,15 @@
 
 ##### Prefer to use const, this adds less complexity to the code, and constants have a single purpose.
 
-**let** userName = Pedro
-<p style='color:red'>
-    let userName = 25 
-</p>
+##### Prefer to use const, this adds less complexity to the code, and constants have a single purpose.
 
-**const** userName = Pedro
-<p style='color:green'>
-    const userName = 25 
-</p>
+```html
+userName = Pedro
+let userName = 25 // do not do it ❌
+
+const userName = Pedro
+const userName = 25  😎🎇
+
 
 
 ### Arrow function
