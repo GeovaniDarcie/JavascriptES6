@@ -39,5 +39,5 @@ const numbers = [1, 2, 3];
 Math.max(...numbers); => 3
 // Por baixo dos panos, o spread operator pega esse
 // array(que é um objeto iterável), e desmembra cada item,
-ele espalha os valores, como se fossem passados um a um
+//ele espalha os valores, como se fossem passados um a um
 ```
