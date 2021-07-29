@@ -31,6 +31,18 @@ Você pode iterar por cada elemento do array, ou por cada letra da string.
 
 Oque faz spread Operator? Ele pega o objeto iterável e desmembra em parte individuais.
 
+Exemplos de spread:
+
+```js
+const food = 'hamburguer'
+console.log(...food); // h a m b u r g u e r
+```
+
+```js
+const equipment = ['mouse', 'keyboard', 'monitor']
+console.log(...equipment); // mouse keyboard monitor
+```
+
 > **Math.max:** retorna o maior número.
 Ex: Math.max(1, 2, 3) => 3
 
@@ -41,7 +53,6 @@ Math.max(...numbers); => 3
 array(que é um objeto iterável), e desmembra cada item,
 ele espalha os valores, como se fossem passados um a um */
 ```
-
 **Antes do spread operator**
 
 ```js
