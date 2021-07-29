@@ -73,6 +73,10 @@ const superGMs = ['Magnus', 'MVL']
 const GMS = ['Krikor', ...superGMs, 'Leitão'] // [ 'Krikor', 'Magnus', 'MVL', 'Leitão' ]
 ```
 
+**Com spread operator**
+O spread também espalha propriedades de objetos dentro de outro objeto
+
+
 ### Rest Parameters
  Usa também a notação de 3 pontos (...), mas agora é chamado de rest parameters,
  ele é usado quando eu quero transformar os parâmetros passados numa função, em um array,
@@ -85,6 +89,8 @@ function sum(...sum) {   // tudo vai dentro do array sum
   sum.reduce((acc, curr) => acc + curr, 0)
 }
 ```
+
+O rest sempre ficará no parâmetro de uma função, ele transforma os argumentos em vetor, já o spread fica no argumento, ele espalha um a um os valores.
  
 
 
