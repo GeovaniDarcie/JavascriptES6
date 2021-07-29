@@ -72,3 +72,19 @@ const GMS = ['Krikor', 'Leitão'].concat(superGMs) // [ 'Krikor', 'Leitão', 'Ma
 const superGMs = ['Magnus', 'MVL']
 const GMS = ['Krikor', ...superGMs, 'Leitão'] // [ 'Krikor', 'Magnus', 'MVL', 'Leitão' ]
 ```
+
+### Rest Parameters
+ Usa também a notação de 3 pontos (...), mas agora é chamado de rest parameters,
+ ele é usado quando eu quero transformar os parâmetros passados numa função, em um array,
+ isso é útil quando eu não sei quantos argumentos vão ser passados, ex:
+ 
+ ```js
+ sum(1, 2, 3, 4, 5)   // podem ter um monte de argumentos aqui.
+  
+function sum(...sum) {   // tudo vai dentro do array sum
+  sum.reduce((acc, curr) => acc + curr, 0)
+}
+```
+ 
+
+
