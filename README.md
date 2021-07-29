@@ -1,4 +1,4 @@
-# Javascript ES
+# Javascript ES6
 
 ### Const, let and var
 
