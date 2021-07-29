@@ -1,4 +1,4 @@
-# Javascript Total
+# Javascript ES
 
 ### Const, let and var
 
