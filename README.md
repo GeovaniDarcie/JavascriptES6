@@ -162,6 +162,42 @@ console.log(brand, city)
 console.log(cold({ cold: true }))
  ```
  
+ ### Higher order functions
+ > Funções de primeira ordem, no javascript, uma
+> função é um dado, ou seja, eu posso receber uma função como argumento e retornar uma função de outra função.
+
+#### Map:
+Quando usar? Quando você quer obter um novo array, com a mesma
+quantidade de itens do original, só que com cada item transformado.
+
+
+
+#### Filter:
+
+perceba, que no método filter, é passado uma função como argumento.
+
+```js
+const idades = [20, 15, 17, 30]
+
+const podeBeber = idades.filter(idade => idade > 18)
+
+console.log(podeBeber)
+ ```
+ 
+ ```js
+const favoriteFrameworksPerson1 = ['Vue js', 'React Native', 'React']
+
+const favoriteFrameworksPerson2 = [ 'Vue js', 'React Native', 'Angular']
+
+const commumFrameworks = favoriteFrameworksPerson1.filter(framework => {
+   return favoriteFrameworksPerson2.includes(framework)
+})
+
+console.log(commumFrameworks);
+ ```
+
+
+ 
  
  
  
