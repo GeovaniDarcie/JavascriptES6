@@ -110,5 +110,60 @@ const [firstNumber, , thirdNumber] = [1, 2, 3]
 console.log(firstNumber, thirdNumber);
  ```
  
+Em objetos:
+
+ ```js
+const beer = {
+    brand: 'Skol',
+    age: 100,
+    cold: true
+}
+
+const { brand, cold }= beer
+
+console.log(brand, cold)
+ ```
+ 
+ Renomeando propriedades:
+ 
+  ```js
+const beer = {
+    brand: 'Skol',
+    age: 100,
+    cold: true
+}
+
+const { brand: marca, cold: gelada }= beer
+
+console.log(marca, gelada
+ ```
+ 
+ Propriedades em profundidade:
+  ```js
+ const beer = {
+    brand: 'Skol',
+    age: 100,
+    cold: true,
+    address: {
+        city: 'Nova Zelândia'
+    }
+}
+
+const { brand, address: { city } }= beer
+
+console.log(brand, city)
+ ```
+ 
+ Em funções:
+ 
+ ```js
+ const cold = ({ cold }) => cold === true
+
+console.log(cold({ cold: true }))
+ ```
+ 
+ 
+ 
+ 
  
 
