@@ -93,4 +93,22 @@ function sum(...sum) {   // tudo vai dentro do array sum
 O rest sempre ficará no parâmetro de uma função, ele transforma os argumentos em vetor, já o spread fica no argumento, ele espalha um a um os valores.
  
 
+### Destructuring Assignment // atribuição de destruição
+
+ ```js
+const [firstNumber, secondNumber, thirdNumber] = [1, 2, 3]
+
+console.log(firstNumber, secondNumber, thirdNumber);
+ ```
+
+Para ignorar qualquer item, basta usar uma vírgula no lugar:
+
+ ```js
+const [firstNumber, , thirdNumber] = [1, 2, 3]
+
+
+console.log(firstNumber, thirdNumber);
+ ```
+ 
+ 
 
