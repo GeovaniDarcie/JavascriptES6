@@ -170,6 +170,43 @@ console.log(cold({ cold: true }))
 Quando usar? Quando você quer obter um novo array, com a mesma
 quantidade de itens do original, só que com cada item transformado.
 
+```js
+const numbers = [1, 2, 3, 4]
+
+/* 
+  objetivo: transformar cada elemento no dobro
+
+  1 - é um vetor
+  2 - vetor final vai ter a mesma quantidade de elementos que a inicial
+  3 - cada elemento será transformado
+
+  escolha: map
+*/
+
+const doubles = numbers.map(number => number * 2)
+
+console.log(doubles)
+ ```
+ 
+```js
+const usuarios = [
+  { name: 'Joao', profissao: 'Engenheiro' },
+  { name: 'Pedro', profissao: 'Aviador' },
+  { name: 'Ricardo', profissao: 'Computacao' },
+]
+/* 
+  objetivo: pegar somento a profissão
+
+  1 - é um vetor
+  2 - resultado final, tem a mesma quantidade de elementos que a inicial
+  3 - é uma mudança em cada elemento do vetor
+
+  escolha: Map
+  
+  const usuariosProfissao = usuarios.map(({profissao}) => profissao)
+  console.log(usuariosProfissao)
+*/
+ ```
 
 
 #### Filter:
