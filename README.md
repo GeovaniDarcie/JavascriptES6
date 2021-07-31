@@ -234,7 +234,54 @@ const commumFrameworks = favoriteFrameworksPerson1.filter(framework => {
 
 console.log(commumFrameworks);
  ```
+ 
+ #### Reduce:
 
+ Quando usar? Quando você quiser reduzir o array a alguma tipo de dado, ex:
+ 
+  ```js
+const numbers = [1, 2, 3]
+
+const sum = numbers.reduce((accumulator, item) => accumulator + item, 0);
+
+/*
+ fluxo:
+  1 - accumulator recebe 0 
+  2- item recebe o primeiro item do array
+  3 - 0 + 1 vai retornar 1 que é armazenado no accumulator
+  4 - item pega o segundo item do array, que é somado com o 1 do accumulator, retornando 3
+  5 - item agora vale 3 que é somado com o 3 do accumulator retornando 6
+
+*/
+
+console.log(sum)
+
+// Resultado foi 6, ou seja, reduzimos o array, para um tipo numérico, por isso chama reduce
+// Bom especificar o 0, ele é o início, mas também mostra qual o tipo de dados queremos retornar com o array, se por exemplo
+// eu quiser retonar uma string, use '', e um objeto {}
+ ```
+ 
+ Imagina que quero pegar esse array, e transformar em uma string, apenas com o nome:
+ 
+  ```js
+const baralhos = [
+  { name: 'magico', price: 50.0 },
+  { name: 'sinistro', price: 44.30 },
+  { name: 'ilusao', price: 32.5 }
+]
+
+1 - transformar um array numa string? Esse é um caso de uso do reduce
+
+const nomesBaralhos = baralhos.reduce((acc, { name }) => `${acc} ${name}` , '')
+                                      //                    ''    'magico'      = acc
+                                      //                   ' magico'  'sinistro' = acc
+                                      //                   '  magico sinistro ilusao = acc
+                                      //                    'magico sinistro ilusao '
+console.log(nomesBaralhos) 
+ ``
+ 
+ 
+ 
 
  
  
