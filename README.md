@@ -278,7 +278,45 @@ const nomesBaralhos = baralhos.reduce((acc, { name }) => `${acc} ${name}` , '')
                                       //                   '  magico sinistro ilusao = acc
                                       //                    'magico sinistro ilusao '
 console.log(nomesBaralhos) 
- ``
+ ```
+ 
+ 
+ #### Propriedades de objetos com nomes dinámicos:
+ 
+ Imagina que eu queira um objeto, com propriedades que serão
+ definidas em tempo de execucação:
+ 
+  ```js
+const obj = {}
+
+const vetor = [50, 18, 39]
+
+vetor.forEach( v => {
+  obj.v = 5
+})
+
+console.log(obj)
+
+/* Usando a notação de ponto, ele não vai reconhecer o v passado no
+parametro  apenas vai pensar "ta tem um v pra definir como nome da minha
+propriedade, vou definir ele aqui v: 5 e pronto"*/
+ ```
+ 
+ Então como deixar esse nome dinâmico?
+ 
+   ```js
+const obj = {}
+
+const vetor = [50, 18, 39]
+
+vetor.forEach( v => {
+  obj[v] = 5
+})
+
+console.log(obj)
+
+// Usando colchetes, dai agora o nome v, será associado ao que está no parametro
+ ```
  
  
  
