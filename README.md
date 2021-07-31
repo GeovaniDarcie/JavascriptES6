@@ -166,6 +166,7 @@ console.log(cold({ cold: true }))
  > Funções de primeira ordem, no javascript, uma
 > função é um dado, ou seja, eu posso receber uma função como argumento e retornar uma função de outra função.
 
+perceba, que em todos os métodos, é passado uma função como argumento.
 #### Map:
 Quando usar? Quando você quer obter um novo array, com a mesma
 quantidade de itens do original, só que com cada item transformado.
@@ -211,7 +212,8 @@ const usuarios = [
 
 #### Filter:
 
-perceba, que no método filter, é passado uma função como argumento.
+Baseado em uma condição, você quer obter um novo array, 
+apenas com alguns elementos do original
 
 ```js
 const idades = [20, 15, 17, 30]
